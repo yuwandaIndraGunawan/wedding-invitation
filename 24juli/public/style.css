@@ -1,0 +1,303 @@
+@font-face /*perintah untuk memanggil font eksternal*/ {
+  font-family: "Kitten-Swash"; /*memberikan nama bebas untuk font*/
+  src: url("font/Kitten-Swash.woff2"); /*memanggil file font eksternalnya di folder nexa*/
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  text-transform: capitalize;
+
+  color: #777;
+}
+
+.kami {
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.kami h2 {
+  font-family: "Combo", Sans-serif;
+}
+
+.kami h3 {
+  text-align: center;
+  font-family: "kitten-swash", Sans-serif;
+}
+
+.dimas {
+  text-align: center;
+}
+.devi {
+  text-align: center;
+  padding-bottom: 50%;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.bgimg-1 {
+  background-image: url("gambar/header1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-color: white;
+  min-height: 400px;
+  color: #d8ad83;
+}
+
+.bgimg-3 {
+  background-image: url("gambar/header3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  margin-top: 12%;
+  width: 100%;
+  text-align: center;
+  color: #ffff;
+}
+.caption b {
+  font-size: 1.5rem;
+}
+
+.caption span.border {
+  padding: 0 25% 0 25%;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption span.border img {
+  height: 2%;
+  width: 30%;
+}
+.caption span.borbawah img {
+  height: 2%;
+  width: 30%;
+  padding: 10% 25% 0 25%;
+}
+
+.galeri {
+  width: 100%;
+  text-align: center;
+  color: #d8ad83;
+}
+.kami span.borkami img {
+  height: 2%;
+  width: 100%;
+  padding-top: 23%;
+}
+
+#nama {
+  font-size: 2rem;
+  padding-bottom: 5%;
+  text-transform: capitalize;
+}
+
+#myModal {
+  background: url(gambar/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#myModal img {
+  align-items: center;
+  width: 60%;
+  height: 15%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  fill: white;
+  color: white;
+  background-color: #545454;
+  padding: 14px 14px 14px 14px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.close:hover,
+.close:focus {
+  fill: #545454;
+  color: #545454;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.utama {
+  text-align: center;
+  color: white;
+  background: url(gambar/covermobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 1;
+  height: 100%;
+}
+
+.profil {
+  border-radius: 100%;
+  width: 10%;
+  height: 10%;
+  margin: 0 auto;
+}
+
+.kaki {
+  width: 100%;
+  background-color: #111111;
+  margin-top: 8%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    min-height: 800px;
+    z-index: 2; /* Sit on top */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: white;
+  }
+  .close {
+    fill: white;
+    color: white;
+    background-color: #545454;
+    padding: 14px 14px 14px 14px;
+    font-weight: bold;
+    font-size: small;
+    border: 2px solid white;
+  }
+
+  .banner {
+    min-height: 800px;
+    z-index: 2; /* Sit on top */
+    background-image: url("gambar/header1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 10%;
+    color: white;
+  }
+
+  .atas {
+    width: 27%;
+    margin: 30% 38% 0 38%;
+  }
+
+  .profil {
+    border-radius: 100%;
+    width: 40%;
+    height: 40%;
+    align-content: center;
+    margin-top: 35%;
+  }
+  .utama {
+    text-align: center;
+    color: white;
+    background: url(gambar/covermobile.jpg);
+  }
+  .utama h1 {
+    padding-top: 0px;
+  }
+  #myModal img {
+    width: 70%;
+    height: 15%;
+    margin: 15% 15% 0% 15%;
+  }
+  .khusus h3 {
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 4%;
+    font-family: "Dancing Script", cursive;
+  }
+  .khusus p {
+    font-size: x-small;
+    margin-top: 1%;
+    text-align: center;
+  }
+  #myModal {
+    background: url(gambar/covermobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  .modal-content {
+    width: auto;
+  }
+
+  .modal-content h1 {
+    margin: 10% 0 0% 0;
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+  }
+  #nama {
+    font-size: x-large;
+    margin: 6% 0 6% 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .devi {
+    padding-top: 40%;
+  }
+  .kami h3 {
+    margin: 0 auto;
+    font-size:1.4rem;
+  }
+  .caption p {
+    font-family: "Clicker Script", Sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 2%;
+    margin-top: 3%;
+  }
+  .caption h3 {
+    color: #ffffff;
+    font-family: "Dancing Script", Sans-serif;
+    font-size: 6.3rem;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.6);
+    margin: 0 0 9% 0;
+    line-height: 110%;
+  }
+  .galeri h3 {
+    margin-top: 0;
+    font-family: "Playfair Display SC", serif;
+    font-size: 2.5rem;
+  }
+}
